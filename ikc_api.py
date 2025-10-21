@@ -14,7 +14,7 @@ except:
 
 
 # 🔧 Load the sentence transformer model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
 
 @app.route('/ikc_search', methods=['POST'])
 def ikc_search():
