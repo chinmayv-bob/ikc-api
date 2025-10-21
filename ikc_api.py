@@ -7,7 +7,11 @@ app = Flask(__name__)
 
 # 🧠 Load your local Chroma Vector DB
 client = PersistentClient(path="C:/Users/chinm/desktop/ikc/ikc_vector_store")
-collection = client.get_collection("ikc_kb")
+try:
+    collection = client.get_collection("ikc_kb")
+except:
+    collection = client.create_collection("ikc_kb")
+
 
 # 🔧 Load the sentence transformer model
 model = SentenceTransformer("all-MiniLM-L6-v2")
