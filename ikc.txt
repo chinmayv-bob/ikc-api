@@ -1,0 +1,2921 @@
+﻿INTERNAL KNOWLEDGE CENTER 
+Table of Contents
+	Dashboard
+	Agent Support
+	Transcripts
+	Bot Configuration
+	Notification
+	User Segmentation
+	Campaigns
+	User Acquisition
+	Flow Builder
+	Smart Automation
+	Settings
+	Dashboard
+1. Dashboard Overview
+
+
+Tutorial: https://vimeo.com/843851740/5df672d269
+
+
+Issues:
+
+
+2. Orders
+
+
+Tutorial: https://vimeo.com/839277293/a5871c08bf
+
+
+Issues:
+
+
+1. How to check orders placed via BOB
+2. Check if an order is prepaid or COD
+3. Order data isn't being fetched
+4. Customer made payment successfully but order not created
+5. Order from WhatsApp but no Payment received - showing confirmation
+6. Discount was not applied on an order placed by the customer.
+
+
+Solutions:
+
+
+For Issue 1: How to check orders placed via BOB
+
+
+Dashboard > Orders
+
+
+For Issue 2: Check if an order is prepaid or COD
+
+
+Go to Order Confirmation Notification > Message log > Enter the order no/customer no > Message Status or go to Transcripts and check the chat.
+
+
+For Issue 3: Order data isn't being fetched
+
+
+Let the customer know only bot orders will be fetched on this data range.
+
+
+Change the calendar date filter and check as well
+
+
+If the client insists the data is inaccurate, raise a CRB.
+
+
+For Issue 4: Customer pay payment successfully but order not created
+
+
+Check their shopify and cross-check if the order has been created.
+* If not created, raise a CRB.
+* If created, follow the following steps.
+
+
+If an order is created and an order confirmation notification is not sent, this could be because the client has set the post-purchase recommendation as 0 hours. That means the recommendation message will be sent instead of Order confirmation (this is exclusive only for website paid orders).
+
+
+For Issue 5: Order from WhatsApp but no Payment received - showing confirmation
+
+
+Check the customer’s transcript, find the checkout link for the order. Go to the link and you can see the payment proof.
+
+
+Send the payment proof to the client.
+
+
+If there is no payment proof, create a CRB.
+
+
+For Issue 6: Discount was not applied on an order placed by the customer
+
+
+Go to the Transcripts of the customer and open the payment link, check if the discount has been applied by checking the amount the customer paid. If it is a discounted price, share the payment screenshot to the client.
+
+
+3. Messages
+
+
+Tutorial: https://vimeo.com/839277275/3c5ece5ba8
+
+
+Issues:
+
+
+
+
+4. Agents >
+>> Agent Analytics
+           
+Tutorial: https://vimeo.com/839277208/c868ff198a
+
+
+Issues:
+
+
+1. How to download the CSAT report?
+
+
+Solutions: 
+
+
+For issue 1: How to download the CSAT report?
+
+
+Go to Dashboard > Agents > Agent Analytics > Reports > Select the date > download
+
+
+>> Agent CSAT
+            
+Tutorial: https://vimeo.com/839277235/abdfb63af3
+
+
+Issues:
+
+
+1. How to disable the agent CSAT message or edit it?
+
+
+Solutions: 
+
+
+For issue 1: How to disable the agent CSAT message or edit it?
+
+
+Go to Dashboard > Agents > Agent CSAT > Config message > Edit or disable > save it 
+
+
+5. Chatbot
+
+
+Tutorial: https://vimeo.com/839277256/5d80f3f8ef
+
+
+Issues:
+
+
+
+
+6. Bot reminders
+
+
+Tutorial: https://vimeo.com/839278431/958aba7793
+
+
+Issues:
+
+
+
+
+7. Widget
+
+
+Tutorial: https://vimeo.com/839277344/147b942695
+
+
+Issues:
+
+
+1. Not able to disable Widget
+
+
+Solution:
+
+
+For Issue 1: Not able to disable Widget
+
+
+Settings > Turn off the the appropriate widget
+
+
+8. Session
+
+
+Tutorial: https://vimeo.com/839277313/1ede081450
+
+
+Issues:
+
+
+
+
+9. Template Usage Count
+
+
+Tutorial: https://vimeo.com/839277331/aa0508552b
+
+
+Issues: 
+
+
+1. How to check the template usage count?
+
+
+        Solutions:
+        
+For issue 1: How to check the template usage count?
+
+
+Go to dashboard > Template usage count > Select the template > customize the timing > Export CSV
+Agent Support 
+1. WhatsApp >>
+
+
+Tutorial: https://vimeo.com/838995344/693f85843f
+
+
+Issues: 
+
+
+1. Unable to send messages
+2. Unable to chat with customer
+3. How to set the message and use them repeatedly in Agent chat?
+4. How to get customers to chat after 24 hours?
+5. I am not able to see any chats in waiting window, all are moved to missed chat (Need to check with Rahul)
+6. When does chat move from Active to Missed window? (Need to check with Rahul)
+7. Many chats are still there in the Missed window. (Need to check with Rahul)
+8. A customer ABC 9XXXXXXXX has typed Hi on March 6, But the chat is in Agent chat. There is no Flow active. The Last conversation was Feb 21, Why has the chat not Auto Resolved?
+9. Please edit this message in Transcript.
+10. Unable to see the Queued section.
+11. Chats are being automatically assigned to agents.
+
+
+Solutions: 
+           
+For Issue 1: Unable to send messages
+
+
+* Ask the contact number of the customer 
+
+
+* Check if the customer is in an active 24 window session( from the time when customer sent the last message)
+
+
+* If Not - then send the below reply to client
+When a user initiates the session it is valid for 24 hours(from the time when the user sent the last message). Once the session expires the brand can only initiate a new conversation/session by sending a template message. Once a user responds to the message, again the session will be valid for 24 hours.
+Note: You can suggest the steps in point 4.
+* If Yes - Check if you are able to send normal message from dashboard If still fetching error then raise a CRB to tech team stating Unable to send messages even if customer is in active 24 hours window session Also Note: If its an International Number and the Client’s provider is Gupshup, they might not have International messaging enabled for them. Confirm with the client if they’d like international messaging enabled and let them there’ll be additional charges depending on the country. If they’d like to go ahead with International messaging, raise a ticket to Gupshup and ask to whitelist the countries the client would like to send international messaged to.
+
+
+For Issue 2: Unable to chat with customer        
+
+
+* Ask the Contact number of the user
+* Check if the user is in waiting window
+* If Yes - The agent needs to click on Accept visitor. Once the chat is accepted, chat will flow to the Active window and the agent/ brand can send any messages for 24 hours.
+* Only a particular agent/admin who accepted the visitor can only see the chat in Active window (If there are multiple agents/admins)
+* Check if the client has a pending payment, if the due payment is of today's date, the dashboard will be temporarily paused.
+
+
+For Issue 3: How to set the message and use them repeatedly in Agent chat?
+
+
+* Agent can set the messages through setting (List message, Quick message, Video Message)
+* Kindly click on Settings Panel >> Interactive Tools>> you can set the above messages                as per your requirement. You can set the standard response for repetitive questions asked by the user. 
+  
+
+
+
+
+
+
+
+* Once the response is set kindly click on the + icon on left side of the message  bar as below
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For Issue 4: How to get customers to chat after 24 hours?
+
+
+* Agents can send template message as “Agent Inactivity” to the customer.
+* Once customer clicks on button agent can start sending normal message
+
+
+For Issue 5: I am not able to see any chats in waiting window, all are moved to missed chat
+
+
+* Customer present in waiting chat and due to some reason or inactivity of agent no one accepted the visitor, then after 6 hours of inactivity that particular chat will move from waiting window o to missed window
+* Customer came to waiting window and then chat was moved to missed window within 1 hours then raise a CRB to tech team
+
+
+For Issue 6: When does chat move from Active to Missed window?
+
+
+* Agent accepts chat and is not able to resolve the query/unattended for more than 6 hours then chat will move from Active window to Missed window.
+* Agents have handled the chat and it is not 6 hours still moved to the missed window then raise a CRB to tech team.
+
+
+For Issue 7: Many chats are still there in the Missed window.
+
+
+* Chats will disappear from the Missed window after 72 hours. 
+* Also the chats which are at bottom will be moved out first after 72 hours from the time it came to the missed window.
+* Even after 72 hours it is still in Missed window, then raise a CRB to tech team
+
+
+
+
+For Issue 8: A customer ABC 9XXXXXXXX has typed Hi on March 6, But the chat is in Agent chat. There is no Flow active. The Last conversation was Feb 21, Why has the chat not Auto Resolved?
+
+
+* As the user hasn’t yet responded to the agent on 21st Feb the intended conversation is continued whenever the user replies to the agent’s message irrespective of the timeframe. 
+
+
+For Issue 9: Please edit this message in Transcript
+
+
+We can not edit a message that has already been sent.
+
+
+For Issue 10: Unable to see the Queued section
+
+
+The queued section is only visible to Admin Logins. 
+
+
+For Issue 11: Chats are being automatically assigned to agents
+
+
+Chats are being assigned to you automatically because you have Auto-Assign enabled for your dashboard. To check this, you can go to Settings > Helpdesk > Auto-Assign.
+
+
+>> Assisted Chats
+            
+Tutorial: https://vimeo.com/838995344/693f85843f
+
+
+Issues:
+
+
+1. Not able to send the message to customer
+2.  Unable to takeover visitor after 24 hrs
+3. Can't send template via chat
+4. How to attach Video in the chat
+5. Message not available 
+6. Message showing failed
+7. Payment Link not getting generated
+8. Assisted sales issue shows an error when adding the customer's address
+9. Few products when I am sending to customer its failed
+
+
+
+Solutions: 
+For Issue 1 to 3 : Not able to send the message to customer
+
+
+1. Check the customer is in 24 hours window 
+If not : initiate a template message (agent_inactivity template)
+If yes : Check the payment due 
+* If payment due is over, then inform the customer about same
+* If payment due is not there, check if the template is approved by the API partner or not. 
+   * If not : submit the template again 
+   * If yes: raise a ticket to the tech team.
+        
+For Issue 4 : How to attach video in the chat
+
+
+Add the video, by going to setting > Helpdesk > Interactive tools > Video messages > Add video message 
+After adding video message > Chat > particular customer chat > Click on Video icon > and select the video > send to customer
+
+
+
+
+For Issue 5 : Message not available
+
+
+* The reaction to the message is not visible and its restriction from meta
+
+
+For issue 6 : Message showing failed
+
+
+Pass it to L2 Support to check logs
+
+
+For Issue 7:  Payment Link not getting generated:  
+        
+Check the Payment gateway is authorized or not 
+- If not - Inform the client to authorize it by going to settings > Integration suite > Payment > Click authorize 
+             - If yes - Try sending placing the order and see getting the payment link or not
+                          - If yes - inform the client 
+                          -  If not - raise CRB to tech team
+
+
+For Issue 8: Assisted sales issue shows an error when adding the customer's address
+
+
+This is a bug, raise a CRB.
+
+
+For Issue 9: Few products when I am sending to customer its failed
+
+
+Product image should not be in WEBp format in the backend of their website (Shopify/Woocommerce)
+
+
+Check if the product is in their catalog on the bot.
+
+
+Check if the product is appearing in the Assisted Sales window.
+
+
+If all of the above have been checked and the issue still persists, raise a CRB.
+
+
+
+
+
+
+2. Instagram
+
+
+ issues : 
+
+
+1. How to integrate with instagram?
+2. Know about instagram integration, pricing and functionality.
+Transcripts 
+1. WhatsApp
+2. Instagram
+
+
+Tutorial: https://vimeo.com/842512222/b7a6859aac
+
+
+Issues: 
+
+
+1. Why is Failed written under certain messages?
+2. Can’t find the Transcripts section on the Dashboard
+
+
+Solutions:
+
+
+For Issue 1: Why is Failed written under certain messages?
+
+
+The red “Failed to send” sentence under messages means the customer has not received this message. This can be due to a number of reasons, please conduct basic debugging steps and contact L2 to check the logs.
+
+
+For Issue 2: Can’t find the Transcripts section on the Dashboard
+
+
+The Transcripts section has been moved to Agent Support.
+Bot Configurations 
+
+
+1. Product Catalog >> 
+>> Catalog Sync
+           
+Tutorial: https://vimeo.com/839278462/4d66a16e82
+
+
+>> Product Arrangement
+           
+Tutorial: https://vimeo.com/839278535/360f6a49eb
+
+
+Issues:
+
+
+1. Price not updated
+2. Image not updated
+3. Wrong image displayed
+4. New products not appearing
+5. Some products missing from the catalog
+6. No products showing up
+7. Products have lots of error
+8. Not able to sync Catalog 
+9. The updates I have made to my Product Arrangement Sheet are not being reflected on WhatsApp
+
+
+Steps to Resolve 1-4 Issues:
+
+
+1. Initiate a catalog synchronization to address price, image, and new product updates.
+2. Perform a catalog sync and verification.
+3. If the issues persist, proceed with the following steps.
+
+
+Steps to Resolve 5-6 Issues:
+
+
+1. Check if the missing products are part of collection in the Commerce Flow (CF sheet).
+   - If not present, inform the client to add the missing products to the designated collection.
+   - If products are listed in the CF, proceed to the next steps.
+2. Verify if the product exists in the catalog sheet.
+   - If absent, conduct a catalog sync and recheck for the product.
+   - If the product is found, proceed with the provided CURL command to send the catalog message to the designated WhatsApp (WA) number.
+3. After sending the catalog message, verify if the product has been received.
+   - If received, check the commerce flow in WA to ensure functionality.
+   - If the product is not received, further investigation is necessary on Facebook Business Manager (FBM) to check for potential product rejections by the commerce manager.
+If issues persist, and the product is not being sent, raise a BUG report.
+
+
+   - Note: Wait for 1 hour after catalog sync for changes to reflect on FBM.
+
+
+CURL Command for Sending Catalog Message:
+
+
+curl --location 'https://waba-v2.360dialog.io/messages' \
+--header 'Content-Type: application/json' \
+--header 'D360-API-KEY: 5ROYDtHrwOF2nAZrgZ2D23ScAK' \
+--data '{
+    "to": "91XXXXXXXXXX",
+    "recipient_type": "individual",
+    "type": "interactive",
+    "interactive": {
+        "type": "product_list",
+        "body": {
+            "text": "Please select a product from the catalog below!\n\r\nType *0* to go back."
+        },
+        "header": {
+            "type": "text",
+            "text": "Products"
+        },
+        "action": {
+            "catalog_id": "519848239890250",
+            "sections": [
+                {
+                    "title": "Products",
+                    "product_items": [
+                        {
+                            "product_retailer_id": "44101467472111"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "messaging_product": "whatsapp"
+}'
+
+
+Note: Replace 'D360-API-KEY', 'catalog_id', and 'product_retailer_id' with the appropriate values.
+
+
+        Issue 7: Products have lots of error
+
+
+1. Ignore the title error
+2. If the error is due to image, price, product link - Then update the image, price, product link manually from the shopify
+If the issues count is more - do the catalog sync again and wait for 1 hour to reflect in the bot.
+        
+        Issue 8: Not able to sync Catalog 
+
+
+1. Check the inventory sheet information and catalog information is uploaded is correct or not in the internal dashboard.
+If not : add it and try again to sync the catalog
+If yes : raise a ticket to the tech team.
+
+
+Issue 9: The updates I have made to my Product Arrangement Sheet are not being reflected on WhatsApp
+
+
+Open the sheet and check if it follows the below guidelines:
+
+
+1. There is a character limit of 24 characters per category.
+2. Symbols are not allowed.
+
+
+If it does and the sheet is still not updated, 
+
+
+2. Bot Responses >> 
+>> Welcome Message
+
+
+Tutorial: https://vimeo.com/839278442/ba6a1c0a15
+
+
+Issues: 
+
+
+1. How to change the welcome message?
+2. How to change the bot name in the welcome message. (For example extra space or brand name is not in capital letters or bold)?
+3. Can we have more than 3 buttons in welcome messages?
+4. How can we create a flow and use that particular flow in a welcome message?
+5. How can we change the name of the flow which is set on a welcome message (for example we want to change the phrase from Agent chat to Talk to expert)?
+6. Why are no messages being sent once the user types Hi?
+7. First time the user sends Hi, bot is not sending any welcome message when the user types hi for the 2nd time the bot is sending a welcome message?
+
+
+Solution: 
+
+
+            For Issue 1: How to change the welcome message?
+
+
+Kindly click on Bot configuration >> Bot Responses >> Welcome Message >> Edit > configure the message as per your requirement >> save.
+Kindly find the video link for Welcome Message 
+https://vimeo.com/839278442/ba6a1c0a15
+
+
+For Issue 2: How to change the bot name in the welcome message. (For example  extra space or brand name is not in capital letters or bold)?
+
+
+Ask the brand name that needs to be appeared for confirmation. Check the issue on bot, if it is not matching then raise a CFR to tech team stating brand wants to change the brand name in welcome message
+
+
+            For Issue 3: Can we have more than 3 buttons in welcome messages?
+
+Currently we have only 3 buttons as this is a limitation set by meta itself Alternatively you can use list interactive message type and can show 10 options on welcome message
+
+
+For Issue 4: How can we create a flow and use that particular flow in a welcome message?
+
+
+Create a flow using flow builder. Once the flow is live you can select Handle by flow from workflows and then choose the flow which you had created as per your requirement and then choose the trigger phase set to the flow 
+
+
+For Issue 5: How can we change the name of the flow which is set on a welcome message (for example we want to change the phrase from Agent chat to Talk to expert)?
+
+
+You can change the phrase from the welcome message Kindly follow the below steps
+Kindly click on Bot configuration >> Bot Responses >> Welcome Message >> Edit > choose your workflow >> click on the trigger phase of the existing flow which you want to change and select Talk to Expert. Also, you can set custom text. Below is the screenshot for reference
+
+
+  
+
+
+
+            For Issue 6: Why are no messages being sent once the user types Hi?
+
+
+Ask for the contact number of the user who is facing this issue. Check if the user is in Agent chat. If the user is in Agent, bot will not respond to any buttons. Once user types # and come out of agent chat, bot will work as expected.
+
+
+Check by sending the message to bot of the brand. If you don't receive any messages. Type # and then again type Hi and send to bot if still not receiving welcome message, then raise a CRB to tech team stating bot is not responding and flag the jira ticket on cs-engineering channel 
+
+
+For Issue 7: First time the user sends Hi, bot is not sending any welcome message when the user types hi for the 2nd time the bot is sending a welcome message?
+
+
+Check the issue by sending, if you are facing the same issue then raise a CRB to the tech team. Try sending hi to bot 3 to 4 times, if everything is working fine then tell the same to client and send the screenshot.
+
+
+>> Menu Message
+
+
+Tutorial: https://vimeo.com/839278442/ba6a1c0a15
+
+
+Issues:
+
+
+1. How to change Menu message?
+2. How to change Menu message?
+3. How to change the bot name in the Menu message. (For example extra space or brand name is not in capital letters or bold)?
+4. Can we have more than 3 buttons in Menu messages?
+5. How can we create a flow and use that particular flow in a Menu message?
+6. How can we change the name of the flow which is set on a Menu message (for example we want to change the phrase from Agent chat to Talk to expert)?
+7. What is the difference between Welcome message and menu Message?
+
+
+Solutions:
+
+
+            For Issue 1: How to change Menu message?
+
+
+Kindly click on Bot configuration >> Bot Responses >> Menu Message >> Edit > configure the message as per your requirement >> save.
+Kindly find the video link for Welcome Message 
+https://vimeo.com/839278442/ba6a1c0a15
+
+
+For Issue 2: How to change the bot name in the Menu message. (For example extra space or brand name is not in capital letters or bold)?
+
+
+Ask the brand name that needs to be appeared for confirmation. Check the issue on bot, if it is not matching then raise a CFR to tech team stating brand wants to change the brand name in Menu message
+
+
+            For Issue 3: Can we have more than 3 buttons in Menu messages?
+
+
+Currently we have only 3 buttons as this is a limitation set by meta itself Alternatively you can use list interactive message type and can have 10 options on Menu message.
+
+
+For Issue 4: How can we create a flow and use that particular flow in a Menu message?
+
+
+Create a flow using flow builder. Once the flow is live you can select Handle by flow from workflows and then choose the flow which you had created as per your requirement and then choose the trigger phase set to the flow 
+
+
+For Issue 5: How can we change the name of the flow which is set on a Menu message (for example we want to change the phrase from Agent chat to Talk to expert)?
+
+
+You can change the phrase from the Menu message Kindly follow the below steps. Kindly click on Bot configuration >> Bot Responses >> Menu Message >> Edit > choose your workflow >> click on the trigger phase of the existing flow which you want to change and select Talk to Expert. Also, you can set custom text. Below is the screenshot for reference
+
+
+  
+
+
+
+For Issue 6: What is the difference between Welcome message and menu Message?
+
+
+When a customer types Hi, bot sends the welcome message to greet the customer from the brand side With Shop Now button so that customer can start the journey on bot and purchase the product.
+When customer types # Bot sends back the user to the starting of the journey, from where customer can start the flow once again on bot with the shop now button or if they have any queries they can talk to the agent. 
+Please note, both the messages (Welcome message and Menu messages can be changes as per your requirement from dashboard)
+
+
+>> Unsubscribe
+
+
+Tutorial: https://vimeo.com/839278442/ba6a1c0a15
+
+
+Issues:
+
+
+1. How to unsubscribe users on the dashboard? 
+2. How to block a contact
+3. Ability to block customers who send illicit messages
+4. Unsubscribe the numbers
+5. Block customers from receiving future broadcasting messages
+6. Wanted to check if a customer blocks us will they still receive notification messages?
+7. What does the feature of an unsubscribe message on the dashboard do? (how does this work)?
+8. How can customers unsubscribe instead of reporting as spam?
+
+
+Solutions: 
+
+
+For Issue 1 to 6: How to unsubscribe users on the dashboard? / How to block a contact / Ability to block customers who send illicit messages / Unsubscribe the numbers / Block customers from receiving future broadcasting messages / Wanted to check if a customer blocks us will they still receive notification messages?
+
+
+Currently we do not have a feature to unsubscribe the users on the dashboard. Ask the brand for the customer’s contact number which needs to be unsubscribed. If the numbers are less, then do it manually by going to the internal dashboard > Unsubscribe. If there are a lot of numbers, raise a CAR to tech with the numbers attached.
+
+
+Please note, even if the user is unsubscribed, the brand will not be able to send any messages to the user, but the customer can still send the message to the brand.
+
+
+For Issue 7 to 8: What does the feature of an unsubscribe message on the dashboard do? (how does this work)? / How can customers unsubscribe instead of reporting as spam?
+
+
+If any customer uses the below phrases on the dashboard. The Bot will send a message and the user will unsubscribe. Brand cannot send any messages to the user until the user responds back/ messages to the bot.
+
+
+You can change the message as per your requirement from the dashboard.
+
+
+Kindly follow the below steps
+
+
+Click on Bot configuration >> Bot Responses >> Unsubscribe >> Edit Make the changes as per your requirement>> Save
+
+
+
+
+>> Bot CSAT
+
+
+Tutorial:
+
+
+Issues:
+
+
+1. What is Bot CSAT?
+2. How to download the Bot CSAT report?
+3. Why Bot CSAT messages are not going to to customer?
+4. How to set a Bot CSAT message?
+5. I want to disable Bot CSAT
+
+
+Solutions: 
+
+
+            For Issue 1: What is Bot CSAT?
+
+
+Bot CSAT (Customer Satisfaction score) refers to a measure of customer satisfaction score.It is a metric used to gauge the effectiveness and performance of a bot in meeting customer needs and expectations. Bot CSAT is typically calculated by asking customers to rate their experience with the bot on a scale, such as from 1 (highly unsatisfied) to 5 (highly satisfied). 
+
+
+            For Issue 2: How to download the Bot CSAT report?
+
+
+Kindly click on Bot configuration >> Bot Responses >> Bot CSAT >> Download (You can select custom date and download the csv file)
+
+
+            For Issue 3: Why Bot CSAT messages are not going to the customer?
+
+
+Check if the template is set under Bot CSAT. If not then inform the client template is not set under Bot CSAT, hence messages are not being sent to the customer. Kindly configure the template as per your requirement and Bot CSAT will work.
+
+
+            For Issue 4: How to set a Bot CSAT message?
+
+
+Check if the template is set under Bot CSAT. If not, then inform the client to create a new template as per the requirement and set it under Bot CSAT by following below steps.
+Kindly click on Bot configuration >> Bot Responses >> Bot CSAT >> Settings >> Select template >> Save.
+
+
+            For Issue 5: I want to disable Bot CSAT
+
+
+Kindly click on Bot configuration >> Bot Responses >> Bot CSAT >> Settings >> Disable Bot CSAT >> save.
+Even after disabling still messages are being sent, then create a CRB to the tech team.
+
+
+3. Checkout
+
+
+Issues:
+
+
+1. What is the difference between standard and fast checkout?
+2. Why was Fast Checkout charged when it is not enabled?
+3. Why are there three addresses during checkout?
+4. We are not getting checkout links today on whatsapp
+
+
+Solutions:
+
+
+For Issue 1: What is the difference between standard and fast checkout?
+
+
+* Standard Checkout - Standard Checkout will display only addresses where their customers have previously placed orders within your brand. If no previous orders have been placed, a new address form will be shown.
+
+
+* Fast Checkout - The fast checkout feature accesses a database of over 20 million addresses. If a brand's customers have ordered from any of the fast checkout enabled brands before, their address will be automatically displayed, allowing for rapid checkout. This can improve the checkout experience for their customers by streamlining the process and making it more efficient. Also, we charge 2.5% on orders placed on bot but this commission varies depending on the client’s subscription.
+
+
+For Issue 2: Why was Fast Checkout charged when it is not enabled?
+
+
+* Check their dashboard if it has been enabled or not
+* If enabled, tell them it had already been configured and they had used it. If they insist they never wanted this feature, talk to their BOB POC and find out more.
+* If disabled, check with accounts as to why they were charged extra and apologize to the client
+
+
+For Issue 3: Why are there three addresses during checkout?
+
+
+The three addresses shown are addresses that the customer has previously placed an order on.
+
+
+For Issue 4: We are not getting checkout links today on whatsapp
+
+
+If the payment gateway is Razorpay, check if authorization is completed by going to Settings > Integrations Suite > Payment Provider > Check if “Authorize” button is there below Razorpay widget
+
+
+4. Charges >> 
+>> Shipping Charges
+
+
+Tutorial: https://vimeo.com/839278494/d330655af4
+
+
+Issues:
+
+
+1. How to configure Shipping charges?
+2. Shipping charges are not getting updated?
+3. Shipping charges need to be removed for some areas. How to do that?
+
+
+Solutions:
+
+
+            For Issue 1: How to configure Shipping charges?
+
+
+You can configure shipping charges from the dashboard itself. Kindly follow the below steps.
+Click on Bot Configuration >> Click on Checkout>> Shipping charges  
+
+
+            For Issue 2: Shipping charges are not getting updated?
+
+
+Check shipping charges on dashboard and check the same on bot if both are different then raise a CRB to tech team stating shipping charges are not getting updated.
+
+
+For Issue 3: Shipping charges need to be removed for some areas. How to do that?
+
+
+Click on Bot Configuration >> Click on Checkout>> Shipping charges
+
+
+>> COD charges
+
+
+Tutorial: https://vimeo.com/839278494/d330655af4
+
+
+Issues:
+
+
+1. How to set COD charges?
+2. How can we set different price slabs? We want to change the COD charges area wise
+  
+
+
+
+Solutions: 
+
+
+            For Issue 1: How to set COD charges?
+
+
+Click on Bot Configuration >> Click on Checkout>> COD charges
+
+
+For Issue 2: How can we set different price slabs? We want to change the COD charges area wise
+
+
+Click on Bot Configuration >> Click on Checkout>> COD charges >> you can select area wise or pincode >> Under charges category, select price slab as per your requirement >> Configure the amount>> Save
+
+
+>> Prepaid Charges
+
+
+Tutorial: https://vimeo.com/839278494/d330655af4
+
+
+Issues:
+
+
+1. How to set COD and Prepaid charges on the dashboard?
+2. How can we set different price slabs for prepaid order? The changes are not getting saved
+
+
+Solutions:
+
+
+            For Issue 1: How to set COD and Prepaid charges on the dashboard?
+
+
+To Configure COD charges - Click on Bot Configuration >> Click on Checkout>> COD charges >>Configure the amount as per your requirement>> Save
+To Configure Prepaid charges - Click on Bot Configuration >> Click on Checkout>> Prepaid charges >>Configure the amount as per your requirement>> Save
+
+
+For Issue 2: How can we set different price slabs for prepaid order? The changes are not getting saved
+
+
+Click on Bot Configuration >> Click on Checkout>> Prepaid charges >> you can select area wise or pincode >> Under charges category, select price slab as per your requirement >> Configure the amount>> Save.
+Once changes are done, check on the bot, if changes are not reflecting then create CRB to the tech team.
+
+
+
+
+
+
+  5. Coupon codes
+
+
+Tutorial: https://vimeo.com/839278517/37a82b4764
+
+
+Issues:
+
+
+1. How to create coupon code on dashboard.
+2. We have created a coupon code on the website. Can we apply the same coupon code on the dashboard and apply on bot?
+3. We have created coupon on dashboard, but unable to apply through assisted sales
+4. Coupon codes which were created long back are now not getting applied on bot.
+5. BoB should not share the coupon code to customers who have shown interest in these specific products which are not included in these coupon
+6. if we create a coupon for which we are not doing any campaign for the customer to know about it. How will customers know about it?
+7. Can you help me understand how to create the available offer button with the welcome message and how to mention the coupon code there?
+8. How to edit expired coupon code?
+9. We want to create the same coupon with different conditions but because a coupon with the same name was created (but has expired now) it's not allowing the creation, how to do it?
+10. Can we create a BUY X GET Y feature? It's there on shopify but not available on whatsapp dashboard.
+11. We need a discount option wherein the discount gets auto applied while checking out without the need of any discount coupon similar to what is available on shopify. How can we do that?
+12. How to create coupon codes for woocommerce brands?
+13. Some random coupons are coming on clicking ‘Available Coupons’.
+
+
+Solutions:
+
+
+            For Issue 1: How to create coupon code on dashboard.
+
+
+Kindly click on Bot responses >> Checkout >> Coupon code >> Create coupon code as per requirement>> save.
+
+
+For Issue 2: We have created a coupon code on the website. Can we apply the same coupon code on the dashboard and apply on bot?
+
+
+If the coupon code is created on shopify backend, then you need to create the same coupon code on BOB dashboard to continue with the checkout on WhatsApp itself. If the customer applies the Shopify Coupon at the time of checkout, then they’ll get the Shopify checkout link.
+
+
+For Issue 3: We have created coupon on dashboard, but unable to apply through assisted sales
+
+
+If the coupon code is created only on BOB dashboard, then coupon cannot be applied through assisted sales. If the same coupon is there on shopify backend and still not able to use it through assisted sales, then raise a CRB to the tech team.
+
+
+For Issue 4: Coupon codes which were created long back are now not getting applied on bot.
+
+
+Check the coupon code is still active on the dashboard. Check if the coupons are getting applied on bot. If not then raise a CRB to the tech team
+
+
+For Issue 5: BoB should not share the coupon code to customers who have shown interest in these specific products which are not included in these coupon
+
+
+Check if specific products are there on shopify backend under that particular coupon code. If yes, then tell the same to the client as it is configured to give a discount to those specific products. Kindly remove those specific products from the coupon code and BOB will not share the coupon on those products. 
+If those products are not there then raise a CRB to the tech team.
+
+
+For Issue 6: if we create a coupon for which we are not doing any campaign for the customer to know about it. How will customers know about it?
+
+
+There are many ways through which customers will come to know about the coupon code.
+​
+1. You can mention the coupon code  in welcome message
+2. You can mention the coupon code through Abandoned cart Notification.
+3. You can also launch a campaign with the coupon code and the offer that you are running.
+4. You can add a button in a welcome message like " Available offers" where once the customer clicks on it, they will get to know all the available offers or coupons.
+
+
+For Issue 7: Can you help me understand how to create the available offer button with the welcome message and how to mention the coupon code there?
+
+
+You can create a flow with a trigger phase as " Available offer" and then you can mention all the available offers or coupons in the journey of the flow.
+​
+Also, you need to create a button as " Available offer" or the same which you mention as the trigger phase of the flow as a button in the welcome message. So that once the user clicks on the button the flow which you have created will start and the user will get to know about the coupon or available offer.
+
+
+            For Issue 8: How to edit expired coupon code?
+
+
+A coupon cannot be edited once it has been created or expired. Only the expiry time can be edited before the coupon has expired.
+
+
+For Issue 9: We want to create the same coupon with different conditions but because a coupon with the same name was created (but has expired now) it's not allowing the creation, how to do it?
+
+
+You can create a coupon code with the same name by deleting the old coupon code. Make sure that you download the report for each coupon code, so that you have the analytics of all of them.
+
+
+
+
+For Issue 10 :Can we create a BUY X GET Y feature? It's there on shopify but not available on whatsapp dashboard.
+We have the feature where we can create a BxGy coupon code. We can create it from the backend. We have not enabled it on the dashboard as there are some limitations of this coupon on the bot. Hence, we do this only on client's requirement.
+
+
+
+
+​Please note the below points:
+1. The coupon will not get applied on the bot automatically. Customers need to manually apply the coupon code at the checkout.
+2. Customers need to add both the products ( X and Y ) in their cart to apply this coupon code.
+
+
+
+
+For Issue 11: We need a discount option wherein the discount gets auto applied while checking out without the need of any discount coupon similar to what is available on shopify. How can we do that?
+
+
+As of now we don't have the feature for auto applying of coupon codes on the bot. We have already raised this with our product team to work on it and implement the same in the near future. (Raise NFR)
+​
+You can create 2 kinds of coupons from your dashboard.
+​
+1. Amount off order - To give discount on total order value
+1. Amount off products - To give a discount on purchase of specific products.
+​
+We will inform you once we have implemented the feature.
+
+
+            For Issue 12: How to create coupon codes for woocommerce brands?
+
+
+If the coupon code already exists on your woocommerce, then you can't create the coupon with the same name on BOB dashboard. To resolve, you can either delete the existing coupon code on woocommerce and then create the same from the BOB dashboard. This will automatically create the same coupon code on your woocommerce as well.
+
+
+            For Issue 13: Some random coupons are coming on clicking ‘Available Coupons’.
+
+
+Check the coupon code on dashboard and shopify, if it is a different coupon code then raise CRB to the tech team. 
+
+
+Coupon codes are not enabled for Custom stores
+6. Bot Reminders >> 
+>> Overview
+
+
+>> Cart Flow
+
+
+Tutorial: https://vimeo.com/839278431/958aba7793
+
+
+Issues:
+
+
+
+
+>> Checkout flow
+
+
+Tutorial: https://vimeo.com/839278431/958aba7793
+
+
+Issues:
+
+
+
+
+>> Address flow
+
+
+Tutorial: https://vimeo.com/839278431/958aba7793
+
+
+Issues:
+
+
+
+
+>> Payment flow
+
+
+Tutorial: https://vimeo.com/839278431/958aba7793
+
+
+Issues:
+7. Pre-purchase recommendations
+
+
+Tutorial: 
+
+
+Issues:
+
+
+1. How to send predefined pre-purchase recommendations
+
+
+Solution : 
+
+
+For issue 1: How to send predefined pre-purchase recommendations
+1. Make a copy of the below google sheet and share it with the client and inform them to add the id of the product with recommended product id in the sheet.
+Google sheet
+2. After filling all the details, inform the client add the sheet under pre-purchase recommendation and save it.
+Notifications
+
+
+1. Overview
+
+
+2. Order Nudge Notifications >> 
+>>Abandoned carts
+
+
+Tutorial: https://vimeo.com/839277981/f4b461d359
+
+
+Issues:
+
+
+1. How to integrate with Gokwik for Abandoned Cart
+2. Abandoned cart is not being sent
+3. Abandoned cart aren't being sent to all customers
+4. Abandoned cart message failed to particular customer
+5. Abandoned cart message failed to few people
+6. How to add the product image in an abandoned cart template?
+7. What is the unique session metric in abandoned carts?
+8. Only 1 prod was abandoned and still the Abandoned prod image wasn't sent, can you please check why?
+9. I had set up abandoned cart messages yesterday, but the wrong photo is going and it is getting failed too.
+
+
+Solutions:
+
+
+For Issue 1: How to integrate with Gokwik for Abandoned Cart
+
+
+Refer: Integration
+
+
+For Issue 2 to 5:  Abandoned cart is not being sent / Abandoned cart aren't being sent to all customers / Abandoned cart message failed to particular customer / Abandoned cart message failed to few people
+
+
+* Check if the template is working. Go to Abandoned Cart Notifications > Settings > Copy the Template Name > Go to Agent Support > Send the template to your number and see if it is being sent.
+* If an error pops up, it's a template issue. Simply duplicate that existing template and replace it in Abandoned Cart Notifications.
+* If the existing template is sent successfully, check if they have any violations on 360.
+* If there are no violations, reach out to L2 to check logs.
+* Frequency Capping can affect abandoned carts with a marketing template.
+* If it is failing for a specific customer, the customer could have unsubscribed. 
+* Other possible chances for the failure of Abandoned Cart messages are:
+
+
+1. If the user receives an order confirmation message, we will not send an abandoned cart notification for the next 24 hours.
+2. If the user has received an abandoned cart message for one cart, we will not send another abandoned cart message for another cart to the same user for the next 24 hours. It also applies to the ping 2 and ping 3 messages. Note: If you need data we can provide it.
+3. If the user does not have Whatsapp on the phone number specified while purchasing the products, they will not receive the message.( check the details in shopify > order > abandoned cart checkout > click on the particular checkout ID > check the phone details )
+4. We will not send any messages to a user who has unsubscribed from receiving messages for that specific brand.
+5. If the user does not reply to the three notification messages that arrived within one hour and if they abandon the cart during that hour, we will not send the message.
+6. There might be an issue with the BSP (360 dialog, Gupshup, or Wati) that prevents the user from receiving the abandoned cart message.
+7. Check the DND hour is enabled for abandoned cart notification 
+8. Then send the notification name, brand name and send time to L2 to check the issue in new relics.
+
+
+For Issue 6: How to add the product image in an abandoned cart template?
+
+
+This is done in the Abandoned Cart Notification Tab.
+
+
+Notifications > Abandoned Cart > Settings > Enable “Configure dynamic image for enhanced customer interaction”
+
+
+For Issue 7:  What is the unique session metric in abandoned carts?
+
+
+It is the number of Abandoned cart notifications that have been sent.
+
+
+For Issue 8 and 9: Only 1 product was abandoned and still the Abandoned prod image wasn't sent, can you please check why? / I had set up abandoned cart messages yesterday, but the wrong photo is going and it is getting failed too.
+
+
+* Check if they have enabled “Configure dynamic image for enhanced customer interaction”
+* If they have selected “Variant Image” instead “Product Image” and the product does not have any variants, then their default image will be sent.
+* The image uploaded should be less than or equal to 5MB
+
+
+
+
+>> Reorder
+
+
+Tutorial: https://vimeo.com/839278133/0db5bf701f
+
+
+Issues:
+
+
+1. Bot is throwing a random reply for the Reorder Notification button.
+
+
+Solutions:
+
+
+For Issue 1: Bot is throwing a random reply for the Reorder Notification button
+
+
+Go to Reorder Notifications > Scroll to the Phone Icon and check if a flow has been assigned to the button. Assign the correct flow if no flow has been assigned or if a wrong flow has been assigned.
+
+
+>> Dormant customers
+
+
+Tutorial: https://vimeo.com/839278039/f14bc6ea7f
+
+
+Issues:
+
+
+1. Know more about the dormant notification
+
+
+Solutions:
+
+
+For Issue 1: Know more about the dormant notification
+
+
+Draft the message by giving an overall summary of Dormant Notification and then send the video tutorial to the customer as well.
+
+
+
+
+>> Post-Purchase Recommendations
+
+
+Tutorial: https://vimeo.com/839278111/cd14a8654c
+
+
+Issues:
+
+
+1. How to enable the pre-purchase recommendations
+
+
+Solution : 
+
+
+For issue 1: How to enable the pre-purchase recommendations
+
+
+1. Make a copy of the below google sheet and share to client and inform the them to add the id of the product with recommended product id in the sheet 
+Google sheet
+2. After filling all the details, Raise a ticket to the tech team.
+
+
+3. Post Order Notifications >> 
+>> Order Confirmation
+
+
+Tutorial: https://vimeo.com/839278061/e3f8fe51a7
+
+
+Issues:
+
+
+1. Order Confirmation notification is not being sent
+2. Order Confirmation notification aren't being sent to all customers
+3. Order Confirmation notification to particular customer
+4. Order Confirmation notification failed to few people
+5. How to add the product image in an Order Confirmation notification?
+6. Only 1 prod was Ordered and still the Ordered prod image wasn't sent, can you please check why?
+7. I had set up an Order Confirmation message yesterday, but the wrong photo is going and it is failing too.
+
+
+Solutions : 
+
+
+For Issue 1 to 4:  Order Confirmation notification is not being sent / Order Confirmation notification aren't being sent to all customers / Order Confirmation notification failed to particular customer / Order Confirmation notification failed to few people
+
+
+* Check if the template is working. Go to Order Confirmation notification > Settings > Copy the Template Name > Go to Chats > Send the template to your number and see if it is being sent.
+* If an error pops up, it's a template issue. Simply duplicate that existing template and replace it in Order Confirmation notification.
+* If the existing template is sent successfully, check if they have any violations on 360.
+* If there are no violations, reach out to L2 to check logs to know the reason.
+   * Frequency Capping can affect Order Confirmation with a marketing template.
+   * If it is failing for a specific customer, the customer could have unsubscribed. 
+   * Other possible chances for the failure of Order Confirmation notification
+   * If the user does not have Whatsapp on the phone number specified while purchasing the products, they will not receive the message.
+   * We will not send any messages to a user who has unsubscribed from receiving messages for that specific brand.
+   * There might be an issue with the BSP (360 dialog, Gupshup, or Wati) that prevents the user from receiving the Order Confirmation message.
+
+
+For Issue 5: How to add the product image in an Order Confirmation notification?
+
+
+This is done in the Order Confirmation notification Tab.
+
+
+Notifications > Order Confirmation notification > Settings > Enable “Configure dynamic image for enhanced customer interaction”
+
+
+For Issue 6 and 7: Only 1 product was Order Confirmation notification and still the Order Confirmation notification image wasn't sent, can you please check why? / I had set up an Order Confirmation notification yesterday, but the wrong photo is going and it is failing too.
+
+
+* Check if they have enabled “Configure dynamic image for enhanced customer interaction”
+* If they have selected “Variant Image” instead “Product Image” and the product does not have any variants, then their default image will be sent.
+* The image uploaded should be less than or equal to 5MB
+
+
+>> COD Confirmation
+
+
+Tutorial: https://vimeo.com/839278006/4abea42eb8
+
+
+Issues:
+
+
+1. Cancel COD option for customers
+2. Frequency Capping affecting COD Confirmation Notifications
+3. How to change partial refund tag to paid tag
+
+
+Solutions:
+
+
+For Issue 1: Cancel COD option for customers
+
+
+To cancel COD options for customers, complete the following steps -
+* Disable COD Charges (Bot Configuration > Charges > COD Charges)
+* Disable COD Confirmation Notification
+
+
+For Issue 2: Frequency Capping affecting COD Confirmation Notifications
+
+
+If the template being used for COD Confirmation Notification is a Marketing template, then yes, Frequency Capping can affect COD Confirmation Notification.
+
+
+For Issue 3: How to change partial refund tag to paid tag in shopify 
+
+
+Create a template without any buttons as below and raise a ticket to tech team saying
+
+
+Subject : Kindly shift them to the 2nd flow for COD Converted to prepaid orders
+
+
+Description : 
+“The flow where we cancel the order and create a new order with the Prepaid Amount
+Template name: cod_to_prepaid_2”
+
+
+Template content : 
+
+
+{{Brand name}}
+
+
+Hi {{1}},
+
+
+Thanks for your payment. We are updating your COD order to Prepaid. Hope you enjoy our products. Here are your updated order details.
+
+
+Order ID: {{2}}
+Amount: {{3}}
+
+
+Please feel free to WhatsApp us for shipping status or any queries. We are here to help you.
+
+
+Type STOP to unsubscribe
+
+
+
+
+
+
+>> Order fulfillments
+
+
+Tutorial: https://vimeo.com/839278090/70f1f7eab7
+
+
+Issues:
+
+
+1. How to add tracking to Order Fulfillment
+2. Can you please tell me how can I add the tracking link in each orders
+3. Tracking isn't being sent in the Order Fulfillment notifications
+4. I am sending an order fulfillment notification, which has a video in it. It is failing for some customers, while going to other customers.
+5. Tracking link in the button is not working.
+
+
+Solutions:
+
+
+For Issue 1 & 2: How to add tracking to Order Fulfillment / Can you please tell me how can I add the tracking link in each orders
+
+
+Shopify Clients - 
+
+
+Simply integrate their shipping partner to the dashboard by going to Settings > Integration Suite > Shipping Partner
+
+
+WooCommerce Clients -
+
+
+Confirm with the client whether their shipping partner is providing tracking details in each order’s order notes in their Woocommerce backed.
+If not, then ask them to contact their shipping partner and get this done.
+If yes, then ask for a copy of the note content and then raise a CFR to tech with this information, stating to enable tracking details for Order Fulfillment Notification.
+
+
+Custom Store Client -
+
+
+Can only be done with the use of an API.
+
+
+For Issue 3: Tracking isn't being sent in the Order Fulfillment notifications
+
+
+Check if the button variable has been set up properly
+For WooCommerce clients, check if their shipping partner is adding tracking details in order notes for each order in their WooCommerce backend. If not, follow the steps for Issue 1.
+
+
+For Issue 4: I am sending an order fulfillment notification, which has a video in it. It is failing for some customers, while going to other customers.
+
+
+* Check if their notification is a Marketing Template, if yes, then it is most probably frequency capping. Still raise it to L2 for further checks.
+* Also conduct basic message failure debugging steps.
+* If the issue persists, raise a CRB to tech.
+For Issue 5: Tracking link in the button is not working
+
+
+Check their Shopify and see if the tracking link is being added or not in each order on the top left. If it is being added, open the link and see if the link is working. If it’s not working, then tell the client to contact their logistics partner to get this fixed. If the link is working, raise a CRB
+
+
+If the link is not available, tell the client to contact their Logistics partner.
+
+
+For WooCommerce clients, check if their shipping partner is adding tracking details in order notes for each order in their WooCommerce backend. If not, follow the steps for Issue 1.
+
+
+>> Order Cancellation
+
+
+Tutorial: https://vimeo.com/839503262/beb296fe54
+
+
+Issues:
+
+
+1. How to change content for Order Cancellation Notification
+
+
+Solutions:
+
+
+For Issue 1: How to change content for Order Cancellation Notification
+
+
+* Create a new template with the new content or duplicate the existing template and replace the body text.
+* Once approved, replace the existing template with the newly approved one.
+
+
+>> Feedback
+
+
+Tutorial: https://vimeo.com/839504298/40d5444a3e
+
+
+Issues:
+
+
+1. Why is the Feedback Notification being triggered before the order has been delivered?
+
+
+Solution:
+
+
+For issue 1: Why is the Feedback Notification being triggered before the order has been delivered?
+
+
+The Feedback Notification might have a trigger that’s too short. Go to Feedback Notification > Settings > Increase trigger days according to your standard time to deliver a product.
+
+
+>> Delivery and Out for Delivery
+
+
+Tutorial: https://vimeo.com/839505981/beeb54a437
+
+
+Issues:
+
+
+1. Delivery messages are not sending to customer
+2. Out for delivery are not sending to customer
+
+
+Solution:
+
+
+For issue 1 to 2:  Delivery messages are not sending to customer
+
+
+1. Check if the template is working. Go to Delivery and Out for Delivery > Settings > Copy the Template Name > Go to Chats > Send the template to your number and see if it is being sent or not 
+* If an error pops up, it's a template issue. Simply duplicate that existing template and replace it in Delivery notification.
+* Its being sent, check in their backend shopify or woocommerce, tags are getting added or not ( tags like Delivered, out for delivery or in transit from their logistic partner)
+* If getting added - Then raise a CRB to tech team
+* If tags are not getting added - inform the client to add the tags from their logistic partner.
+
+
+  
+
+User Segmentation
+
+
+Tutorial: https://vimeo.com/839505275/0c103ddb0e
+
+
+Issues:
+
+
+1. Unable to create the User segmentation
+2. Discrepancies in all customers data when compared to Shopify
+3. How to download the customer data?
+
+
+        Solutions:
+
+
+        For issue 1: Unable to create the User segmentation
+        1. Ask the client to perform a hard refresh.
+2. If the issue persists, advise the client to check in incognito mode.
+3. If the problem remains unresolved, raise a bug to the tech team while attaching a recording of the issue.
+
+
+For issue 2: Discrepancies in all customers data when compared to Shopify
+            1. Ask the client to perform a refresh of the bucket.
+2. If the discrepancy is still there, ask for the shopify report and cross verify.( Note that only unique customer numbers will be stored in the bucket).
+3. If the problem remains unresolved, raise a CAR to Parth for data backfilling.
+
+
+For issue 3: How to download the customer data?
+            1. Go to user segmentation > select the bucket > click on three dots > download
+Campaigns
+
+
+Tutorial: https://vimeo.com/839505574/49e1334c60
+
+
+Issues:
+
+
+1. Unable to select any option
+2. Unable to upload media
+3. Data sheet validation failure
+4. Test failure
+5. Test was successful but message not sent
+6. Launch Campaign failure
+7. Campaign sent but failed for all
+8. Campaign sent but failed for a few
+
+
+Solutions:
+
+
+For Issue 1: Unable to select any option
+1. Ask the client to perform a hard refresh.
+2. If the issue persists, advise the client to check in incognito mode.
+3. Check it from your end.
+4. If the problem remains unresolved, raise a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 2: Unable to upload media
+1. Verify media specifications conform to dashboard guidelines (e.g., image size < 5 Mb, image type: jpeg/png).
+2. Download the file, send it your own WhatsApp numbers. Download this new file and upload it to the dashboard once again.
+3. Instruct the client to perform a hard refresh.
+4. If the problem persists, advise the client to check in incognito mode.
+5. If issues persist, escalate by raising a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 3: Data sheet validation failure
+1. Verify data sheet headers match the provided sample file and are in Excel format.
+2. Suggest a hard refresh to the client.
+3. If the problem persists, advise the client to check in incognito mode.
+4. If issues persist, escalate by raising a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 4, 5, 7: Test failure, Test successful but message not sent, Campaign sent but failed for all
+1. Check campaign template status.
+2. Advise the client to perform a hard refresh.
+3. For test message failure, ask the client to ping the WhatsApp bot a hi and then to try again.
+3. If the problem persists, advise the client to check in incognito mode.
+4. For persisting issues, escalate by raising a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 6: Launch Campaign failure
+1. Check if any campaign is running. (Note: 2 campaign cannot run at the same time)
+1. Advise the client to perform a hard refresh.
+2. If the problem persists, advise the client to check in incognito mode.
+3. If issues continue, escalate by raising a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 8: Campaign sent but failed for a few
+1. Check campaign template status.
+2. Raise it to L2 to check error logs.
+User Acquisition 
+
+
+1. Meta Ads
+
+
+Tutorial: https://vimeo.com/843473040/d65753be32?share=copy
+
+
+Issues:
+
+
+1. How to configure CTWA on Meta Ads Manager? 
+            2. How to publish the campaign on Facebook business manager?
+            3. The flow is not working after launching the meta ad campaign?
+
+
+            Solutions:
+
+
+        For issue 1: How to configure CTWA on Meta Ads Manager?
+Share the scribe file -          https://scribehow.com/shared/How_to_configure_CTWA_on_Meta_Ads_Manager__xdpKexfXShevbd1t0MpEHQ
+
+
+For issue 2: How to publish the campaign on Facebook business manager?
+
+
+Share the scribe file -          https://scribehow.com/shared/Engagement_Campaign_on_Facebook_Ads_Manager__UHbP73v3S3Wt7PMkvZ1xsg
+
+
+For issue 3: The flow is not working after launching the meta ad campaign?
+
+
+* Share the below scribe file and ask the meta shareable link:
+https://scribehow.com/shared/Meta_Ads_shareable_link__QB82pgcqTKyIZPB1IcwrHQ
+* After getting the link, click on link > whatsapp > check the flow is working or not 
+* If no - Raise a ticket to tech team  
+
+
+2. Referral
+
+
+Tutorial: https://vimeo.com/839505441/2dab4009ea
+
+
+Issues:
+
+
+3. Loyalty
+
+
+Tutorial: https://vimeo.com/839505441/2dab4009ea
+
+
+Issues:
+
+
+1. How to turn off Loyalty points?
+2. Reward points given to canceled order
+3. How to redeem the loyalty points?
+4. Points not credited for last two orders
+
+
+Solutions:
+
+
+For Issue 1: How to turn off Loyalty points?
+
+
+To turn off loyalty points, disable all the messages that have been set up in Loyalty > Settings > Message Configuration
+
+
+Also turn the rewards widget off.
+
+
+For Issue 2: Reward points given to canceled order
+
+
+Check Shopify/Woocommerce if the order is indeed canceled, there’s a high chance that it has not. We do not give reward points for canceled orders.
+
+
+If the order has indeed been canceled in their website backend and the rewards points were still given, raise a CRB.
+
+
+For Issue 3: How to redeem the loyalty points?
+
+
+Loyalty points can only be redeemed when placing an order. The agent also has the ability to convert loyalty points to a discount code for the customer as well.
+
+
+For Issue 4: Points not credited for last two orders
+
+
+* Loyalty points are awarded after the order has been delivered. It should be marked as delivered by the shipping partner on the client’s website, only then will our system send the loyalty points.
+* Other issues such as subscription expiry date can also play a role in the loyalty points template not being sent
+
+
+4. Widgets
+
+
+Tutorial: https://vimeo.com/839505441/2dab4009ea
+
+
+Issues:
+
+
+5. Influencer Marketing 
+
+
+6. Product Abandonment
+
+
+Issues:
+
+
+1. Why are my Cart Page Drop offs not working?
+
+
+Solutions:
+
+
+For Issue 1: Why are my Cart Page Drop offs not working?
+
+
+1. Check if the toggle is enabled.
+2. Check if there is a copy of the automation made in Smart Automation. Copies of Automation won’t work, only the main one will.
+3. Go to their website, go through their commerce journey and see how their cart is. If the cart page is a separate URL, then raise CRB. If not, then that’s because we need the cart page to go to a separate page for it to work. Let the client know these customers will be targeted with the Product Drop Offs automation.
+Flows Builder
+
+
+Tutorial:  Flows- Single Message: Single Message 
+             Flows- General Flows:  General Flow 
+             Flows- Campaign: Campaign Flow 
+
+
+Issues:
+
+
+1. Customer flow is not working as expected
+2. The flow didn’t work after 4 questions
+3. Phrases aren't triggering customer flow
+4. Flows aren't being triggered properly
+5. I'm creating a flow, I need to add two buttons which I have but how do I add the URL or destination.
+6. Need help creating flow for meta ads
+7. How to create a flow on Utility message?
+8. Multiple active Flows but only one is visible
+9. I added 30 items to each CTA flow for the bot shop, but only a few are showing up.
+
+
+Solutions:
+
+
+For Issue 1 and 2: Customer flow is not working as expected / The flow didn’t work after 4 questions
+
+
+* If the flow is for a notification, check if the template has been set to “Handle by flow”
+* If a specific button is not triggering the rest of the flow, check if the button text has any spaces.
+* If there are multiple buttons in a template, then check if a flow has been created for each button by simply clicking on each button.
+
+
+Overall, firstly understand the customer use-case from A-Z, how they want the flow to interact with the customer and then take appropriate debugging steps.
+
+
+For Issue 3 and 4: Phrases aren't triggering customer flow / Flows aren't being triggered properly
+
+
+* Different trigger phrases should be in different trigger brackets, for eg:
+  
+
+
+
+  
+
+
+
+* Check if there is another flow with the same trigger phase, if so, turn it off after gaining permission from the customer.
+* Flows will also not be triggered if sent during Agent chat. For example: A flow being triggered with a template, will not work if the template is sent over chat because the number is in agent chat and bot will not respond during Agent Chat.
+
+
+For Issue 5: I'm creating a flow, I need to add two buttons which I have but how do I add the URL or destination.
+
+
+* The URL/destination will be embedded in the button for a static URL during template creation.
+* For the quick reply button, simply set up a flow where upon clicking the button, the next message is a simple message with the URL/Destination.
+
+
+For Issue 6:  Need help creating flow for meta ads
+
+
+* Once the ad is created in their ads manager, using the same template create a flow with the type selected as “Meta Ads”
+* After the flow has been set up, go to User Acquisition > Meta Ads > Create the ad campaign > Select the created flow under the dropdown in “Select flow to associate with this ad”.
+
+
+For Issue 7: How to create a flow on Utility message?
+
+
+Same process as creating a flow with a marketing template.
+
+
+For Issue 8: Multiple active Flows but only one is visible
+
+
+This is a BUG, raise a CRB to tech.
+
+
+For Issue 9: I added 30 items to each CTA flow for the bot shop, but only a few are showing up.
+
+
+This is a product catalog issue, continue with debugging steps for Catalog where products aren’t showing up.
+Smart Automation
+
+
+Tutorial: https://vimeo.com/843522258/1f48634805
+
+
+Issues: 
+
+
+1. Smart automation is not working 
+2. Data mismatch in smart automation and flow 
+3. How to find the URL in customer webhook automation
+4. Smart automation limit?
+
+
+Solutions:
+
+
+For Issue 1: Smart automation is not working  
+
+
+Check the smart automation setup to ensure all conditions are met.
+* If all conditions are met, raise a ticket to the tech team.
+* Customers
+* If any conditions are not met, inform the client of the specific issue and provide the solution for the same.
+   * Time condition is not yet met.
+   * Template has an issue.
+   * Flow is not active.
+For Issue 2: Data mismatch in smart automation and flow 
+
+
+The data mismatch is due to smart automation will have the data of all the customer for whom message triggered 
+The flow will have the data the customer clicked on the flow 
+
+
+For Issue 3: How to find the URL in customer webhook automation
+
+
+The URL will be available in the dashboard once the Smart Automation is launched.
+
+
+For Issue 4: Smart automation limit?
+
+
+Login to internal dashboard > Sign in to client > Smart automation > Smart automation information > Check the active one, that's the limit
+
+
+Settings
+1. General >> 
+>> Whatsapp Widget
+>> Reward Widget
+>> Customer Details Pop Up
+>> Audio Notification
+>> Browser Notification
+
+
+Tutorial: https://vimeo.com/839505905/7be19c6eb3
+
+
+Issues:
+
+
+1. How to activate the whatsapp widget which appears on websites?
+2. After enabling the whatsapp widget on the dashboard, it is not appearing on the website. What needs to be done?
+3. Want the Java script for the whatsapp widget.
+4. How to move the whatsapp icon from right to left or vice versa
+5. How to enable Reward widget?
+6. After enabling the reward widget on the dashboard, it is not appearing on the website. What needs to be done?
+7. Not receiving any popup whenever the new chats come
+8. How to view contacts who signed up in Customer Details pop-up?
+9. How to add an image to WhatsApp pop-up section?
+10. The reward widget icon is not aligned properly on the website.
+
+
+Solutions: 
+
+
+For Issue 1: How to activate the whatsapp widget which appears on websites?
+
+
+You can activate the whatsapp widget through the dashboard. Kindly follow the below steps. Kindly click on Settings >> General >> Whatsapp Widget >> Enable the toggle. Once this is done, kindly do a hard refresh (ctrl+Shift+R) and check on the website.
+If still it is not appearing on website then create a CRB to the tech team
+
+
+For Issue 2: After enabling the whatsapp widget on the dashboard, it is not appearing on the website. What needs to be done?
+
+
+Check if the whatsapp widget is enabled on the dashboard. If not, then enable it and check if it is appearing on the brand website and inform the client.
+
+
+After enabling the dashboard, if still it is not appearing on the website. Try doing a hard refresh on the dashboard as well as the website. If it is still the same then create a CRB to the tech team.
+
+
+Even after enabling the widget if it is getting automatically disabled on the dashboard. Create a CRB to tech.
+
+
+For Issue 3: Want the Java script for the whatsapp widget.
+
+
+Create a CFR for the tech team. Once the tech team provides the Java script, inform the client that their developer needs to work on this. (nothing is done from our side).
+
+
+For Issue 4:How to move the whatsapp icon from right to left or vice versa
+
+
+Kindly click on Settings >> Website widget >> whatsapp widget >> change the position.
+
+
+            For Issue 5: How to enable Reward widget?
+
+
+You can activate the Reward widget through the dashboard. Kindly follow the below steps. Kindly click on Settings >> General >> Reward Widget >> Enable the toggle. Once this is done, kindly do a hard refresh (ctrl+Shift+R) and check on the website.
+If still it is not appearing on website then create a CRB to the tech team
+
+
+For Issue 6: After enabling the reward widget on the dashboard, it is not appearing on the website. What needs to be done?
+
+
+Check if the reward widget is enabled on the dashboard. If not, then enable it and check if it is appearing on the brand website and inform the client.
+After enabling the reward widget on the dashboard, if still it is not appearing on the website. Try doing a hard refresh on the dashboard as well as the website. Still it is the same then to raise a CRB to the tech team.
+Even after enabling the widget if it is getting automatically disabled on the dashboard. Raise a CRB to the tech team.
+
+
+For Issue 7: Not receiving any popup whenever the new chats come
+
+
+1. To receive the chat notification, enable the Audio notification and Browser Notification
+To do that go to Settings >> General >> enable the Audio notification and  Browser Notification.
+2. Ask the client to remove the cache.
+3. If the issue persists, advise the client to check in incognito mode.
+4. If the problem remains unresolved, raise a bug to the tech team while attaching a recording of the issue.
+
+
+For Issue 8: How to view contacts who signed up in Customer Details pop-up?
+
+
+Click on “Download Contacts” in the Customer Details pop-up tab in Settings.
+
+
+For Issue 9: How to add an image to WhatsApp pop-up section?
+
+
+Currently we don't have an option to add an image.
+
+
+For Issue 10: The reward widget icon is not aligned properly on the website.
+
+
+Check their website and confirm the widget icon is not properly aligned.
+
+
+If it is aligned properly, capture a screenshot and send it to the client.
+
+
+If it is not aligned properly, raise a CRB.
+
+
+2. Helpdesk 
+>> Agent
+
+
+Tutorial: https://vimeo.com/839505853/c3aca6edcb
+
+
+Issues:
+
+
+1. How to add another Agent?
+2. Unable to create a new agent
+3. Request to delete agents from dashboard
+4. Forgot ID and password for dashboard
+5. Increase the agent count
+6. Password reset for agent
+
+
+Solutions:
+
+
+For Issue 1: How to add another Agent?
+
+
+To Add a new agent - Settings > Helpdesk > Agent > Add Agent
+
+
+By default with the plan, you get 5 agents. To add more agents, reach out to Support via the live chat widget in the dashboard.
+
+
+For Issue 2: Unable to create a new agent
+
+
+Check Internal Dashboard > Configure Agents > Maximum amount of user > See if they have exceeded the limit.
+
+
+If the limit has not been exceeded, create one for them via the frontend or backend.
+
+
+If the issue persists, raise a CRB.
+
+
+For Issue 3: Request to delete agents from dashboard
+
+
+Guide them how to do it: Settings > Helpdesk > Agent > Delete Agent
+
+
+If the above does not work, delete it for them from the internal dashboard: Internal Dashboard > Configure Agents > Edit Agent > Click on the requested Agent > Delete
+
+
+If both the above steps do not work, raise a CRB.
+
+
+For Issue 4: Forgot ID and password for dashboard
+
+
+Check Client Level login and then send it to them.
+
+
+For Issue 5: Increase the agent count
+
+
+Internal Dashboard > Configure Agents > Maximum amount of user > Increase the count
+
+
+For Issue 6: Password reset for agent
+
+
+Settings > Helpdesk > Agent > Edit > Change the password
+
+
+>> Agent chat
+
+
+>> Interactive tools
+
+
+Tutorial: https://vimeo.com/839505934/7a0cc46b7f
+
+
+Issues:
+
+
+1. Where to find the list of customers under a specific tag
+2. How to add tags?
+3. How to send a video to a customer?
+
+
+Solutions:
+
+
+For Issue 1: Where to find the list of customers under a specific tag
+
+
+Settings > Helpdesk > Interactive tools > Tags > Download report for the required tag
+
+
+For Issue 2: How to add tags
+
+
+Settings > Helpdesk > Interactive tools > Tags > Create a new tag
+
+
+For Issue 3: How to send a video to a customer?
+
+
+Settings > Helpdesk > Interactive tools > Video messages > Add Video Message
+
+
+Once it has been added, go to the customer chat and click on video icon, the uploaded video will pop up there.
+
+
+3. WhatsApp Templates
+
+
+Tutorial: https://vimeo.com/839509518/f7f542aef2
+
+
+Issues:
+
+
+1. Please approve my template
+2.Template is approved in META but not on BOB
+3. How long does it take for a template to get approved?
+4. How to use variables to show unique customer names
+5. How to set up a quick reply template?
+6. What are the video specifications for templates?
+7. Unable to upload a media header in templates
+8. Unable to add an image when creating a template
+9. Unable to upload a video when creating a template
+10. Utility template is being rejected
+11. Why are my templates getting rejected?
+12. Not able submit the template, getting meta server error
+13. Getting a red error pop-up when trying to submit a template.
+14. Use of custom Url and static url
+15. Templates are stuck in drafted state
+16. What should I add in the sample variables tab?
+
+
+Solutions:
+
+
+For Issue 1 and 2: Please approve my template / Template is approved in META but not on BOB
+
+
+* After identifying the template name, go to 360/Gupshup and check the template status there.
+* If approved, login to the internal dashboard. Change the client name to the requested client and go to Templates. In templates, search for the requested template and click on Status. Change the status to Approved and Save.
+* If Pending, contact 360/Gupshup Support and request for the template to be approved. Communicate how our templates get approved within seconds and that this is taking a while. If they reply saying it will take up to 24 hours, relay the same to the client.
+
+
+For Issue 3: How long does it take for a template to get approved?
+
+
+Templates will usually take up to a minute to get approved, 15 minutes maximum. If the template is stuck in pending for more than the usual time, contact the appropriate API partner (360/Gupshup) and raise a ticket to their support (follow the steps for Issue 1 resolution)
+
+
+For Issue 4: How to use variables to show unique customer names?
+
+
+While creating the template, insert a variable in the body at the desired location. Later on when running the campaign, the excel file used to upload the contacts should have an additional column right after “phone”. This column should have a heading of “1” and then have the names subsequently listed below accordingly matching their phone numbers. For multiple variables, follow the same steps and heading should change accordingly to the variable number.
+
+
+For Issue 5: How to set up a quick reply template?
+
+
+* Go to Settings > WhatsApp Templates > Create Template
+* Choose the required template category and name.
+* On the next page, scroll down to the bottom.
+* Click on Button Type > Quick Reply
+
+
+Also do note, quick reply buttons work according to the trigger phase that is set up in Flow Builder. If the client has a specific message flow in mind for this quick reply button, they have to set up a flow for it.
+
+
+For Issue 6 to 9: What are the video specifications for templates? / What are the video specifications for templates? / Unable to upload a media header in templates / Unable to add an image when creating a template / Unable to upload a video when creating a template
+
+
+* When uploading a video as a part of a template, it should be less than 15MB, be in mp4 format, and have a resolution of 940 x 500 pixels.
+
+
+* When uploading an image as a part of a template, it should be less than 15MB.
+
+
+* If the video and image specifications are following the above guidelines, try uploading the media header from your end and confirm there is no issue.
+
+
+* If issue persists, raise a CRB to Tech for further investigation
+
+
+For Issue 10 to 11: Utility template is being rejected / Why are my templates getting rejected?
+
+
+Utility Template: 
+
+META is very strict on Utility template guidelines. There should be no promotional content whatsoever in the template for eg: Promotion a product, promising a discount, promoting an upcoming event, these are all considered a form of marketing and will be rejected.
+
+
+If the utility template is sound and proclaims no promotional or marketing content at all and is still rejected, contact 360 chat and ask them to appeal this decision. 360 will appeal it at META and the process will take 24 hours. Relay the same to the client.
+
+
+Marketing Template: 
+
+The following link holds the reasons of rejection for a marketing template -
+
+
+https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/
+
+
+For Issue 12 and 13: Not able submit the template, getting meta server error/ Getting a red error pop-up when trying to submit a template
+
+
+* Try creating creating a template on their dashboard from your end
+* If the issue persists, contact 360 about it.
+
+
+For Issue 14: Use of custom Url and static url
+
+
+Dynamic URL: This url will allow link tracking and analytics. It can also be used as a variable to send unique urls to different customers.
+
+
+Static URL: This URL does not allow link analytics.
+
+
+For Issue 15: Templates are stuck in drafted state
+
+
+If templates are stuck in a drafted state, check the template via the client’s dashboard. It is in the drafted state because of an error that prohibits it from being submitted. Check this link and cross-check that it is following all of the rules prescribed in it: https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/
+
+
+For Issue 16: What should I add in the sample variables tab?
+
+
+Sample Variables tab is to let META know how this specific template will look like when being sent to customers. 
+
+
+The image sample can be any image.
+
+
+The variable sample can be similar to the intended use-case, for eg: If {{1}} is intended to show the customer name, type any random name within the variable sample tab.
+
+
+4. Website Widget
+
+
+Tutorial: https://vimeo.com/839506008/5e6811dd3b
+
+
+Issues: 
+
+
+5. WhatsApp Profile
+
+
+Issues:
+
+
+1. How to change a whatsapp profile picture / Description?
+2. How to remove/ add the catalog in whatsapp?
+
+
+        Solutions:
+
+
+        For issue 1: How to change a whatsapp profile picture / Description?
+
+
+Check the client is 360 dialog or Gupshup 
+
+
+If 360 dialog - Login to dashboard > settings > Whatsapp profile > Business profile > edit > add the image/ description > save.
+Check WhatsApp for updates.
+
+
+If Gupshup - Login to gupshup dashboard > Profile > Your account > Your Business Profile > edit > Upload the image / add the description > Update it
+Check WhatsApp for updates
+
+
+6. Integration Suite
+>> Payments
+
+
+Issues:
+
+
+1. Paid order are staying as a drafted order
+2. How to integrate the payment gateway and what are all the details needed?
+3. Need to change Payment Integration to another platform
+
+
+Solutions:
+
+
+For Issue 1: Paid order are staying as a drafted order
+
+
+Check their website backend and cross-check
+If the issue is true, raise a CRB
+
+
+For Issue 2 and 3: How to integrate the payment gateway and what are all the details needed? / Need to change Payment Integration to another platform
+
+
+Taking into consideration of the platform they’d like integrate or move to, acquire the following details - 
+
+
+Razorpay: API Key And Secret
+Paytm : Merchant ID and Merchant Key
+PayU : Merchant key and merchant Salt
+PayU biz : Merchant key and merchant Salt
+Cashfree: Key ID and Secret
+
+
+After obtaining the above relevant information, create a CAR to onboarding if they are integrating a payment gateway for the first time or a CRB to Tech if they are migrating to another platform.
+
+
+>> Store Provider
+                     
+>> Shipping Partners
+
+
+7. Schedule >> 
+>> DND hours
+
+
+Tutorial: https://vimeo.com/839505876/81750a7a87
+
+
+Issues:
+
+
+1. Want to stop the notifications in DND hours
+
+
+Solutions:
+
+
+For issue 1: Want to stop the notifications in DND hours
+
+
+Settings > Schedule > DND hours > and set up the notifications and triggers you'd like to not receive during the DND hours.
+
+
+>> Working Hours
+
+
+Tutorial: https://vimeo.com/839505958/f0ff9b2932
+
+
+Issues:
+
+
+
+
+8. System Alerts
+
+
+Issues:
+
+
+1. Received API down notification
+2. Already paid the dues but payment notification is being sent
+3. Unable to add notifications to system alerts
+
+
+Solutions:
+
+
+For Issue 1: Received API down notification
+
+
+Check 360/gupshup to see if there is a violation. If there is some violation, contact the 360/gupshup support and get it removed.
+
+
+Go to their WhatsApp and see if the bot is responding.
+
+
+For Issue 2: Already paid the dues but payment notification is being sent
+
+
+* Ask for a payment proof.
+* Contact Accounts and send the proof.
+
+
+For Issue 3: Unable to add notifications to system alerts
+
+
+* Ask them for a screenshot of the error.
+* Advise that they can only select the options available in the notifications dropdown.
+
+
+9. Payments
+
+
+Issues:
+
+
+1. Payment pop-up appearing even after payment was completed
+2. Dashboard extension after cleared payment
+3. Remove popup after completed payment
+4. Payment pop-up issue
+5. Please unblock the dashboard
+6. International conversations charge
+7. Analysis on International conversations billed in the invoice
+8. Information about marketing charges in invoice
+9. Pausing subscription
+10. Follow-up on invoice reconciliation request
+11. Changing GST number in invoice 
+12. Made payment without TDS but subscription is still expired
+13. Increase mandate amount for subscription payment 
+14. Help finding invoice
+15. Tried to make Payment via “Pay Now” button but the payment is not going through.
+
+
+Solutions:
+
+
+For Issue 1 to 5:  Payment pop-up appearing even after payment was completed / Dashboard extension after cleared payment / Remove popup after completed payment / Payment pop-up issue
+
+
+* Talk to Harsh from Accounts team and confirm if the dashboard can be extended
+* Once confirmation has been received, log in to the internal dashboard > Configure Chargebee Account > Settings > Click on Enable popup with cross button > Enter Days > Scroll down and save.
+* Log in to the Client dashboard and confirm the dashboard has been extended.
+
+
+For Issue 6 to 8: International conversations charge / Analysis on International conversations billed in the invoice / Information about marketing charges in invoice
+
+
+International Conversation Charges: 
+
+
+Marketing Conversation Charges: 0.88 standard per message
+
+
+Utility Conversation Charges: 0.38 standard per message
+
+
+The above charges are the standard charged, but charges will differ according to the brand’s proposal. Check their proposal either via Freshdesk to find their exact charges or by checking their latest usage invoice.
+
+
+If a client has an issue with the charges on their invoice, guide them to Template usage count and ask to cross-check the data in the invoice. 
+
+
+For Issue 9: Pausing Subscription.
+
+
+Reply to the email or chat in an empathetic manner, asking why they’d like to pause their subscription.
+Fill in the Churn sheet and a CSM will take this request forward
+
+
+For Issue 10 to 13: Changing GST Number in invoice / Invoice reconciliation request /  Made payment without TDS but subscription is still expired / Increase mandate amount for subscription payment
+
+
+Pass this to Accounts
+
+
+For Issue 14: Help Finding Invoice
+
+
+Settings > Payments > Pay Now > Download PDF
+
+
+For Issue 15: Tried to make Payment via “Pay Now” button but the payment is not going through
+
+
+The client must be on e-mandate (Auto-debit). Check with the Accounts team and see if e-mandate is turned on.
+Once the e-mandate is confirmed, confirm when the auto-debit will occur and let the client know.
+
+
+If E-mandate is not turned on, talk to Accounts and get the invoice and payment link, also raise a CRB stating the Pay Now button is not working.
+
+
+FAQs and Troubleshooting:
+
+
+3rd party integration 
+
+
+Issues: 
+
+
+1. How to install shopify public app
+2. How to integrate new shipping partner
+3. How to integrate with shiprocket
+4. Shifting website from Shopify to Woocommerce 
+5. Integration with Gokwik, webengage, Kapture, Freshchat
+
+
+Solutions:
+
+
+For Issue 1: How to install shopify public app
+
+
+Refer : https://scribehow.com/shared/Upgrading_to_Shopify_Public_App__kaS1iLIcSOWZPjSlcwIqbw
+
+
+For Issue 2: How to integrate new shipping partner
+
+
+Navigate to Settings > Integration Suite > Shipping partners > Select Others > Follow the steps provided there.
+
+
+For Issue 3: How to integrate with shiprocket
+
+
+Navigate to Settings > Integration Suite > Shipping partners > Select shiprocket
+
+
+For Issue 4: Shifting website from Shopify to Woocommerce
+
+
+Raise a CAR to Gouthami (onboarding team) provide POC number and name
+
+
+For Issue 5: Integration with Gokwik, webengage, Kapture, Freshchat
+
+
+https://docs.google.com/document/d/1Ak4i1TrADHsx3pGXbyGeuvSw43Hf3bqqM5Mv6p-AGVw/edit
+
+
+Bot 
+
+
+Issues : 
+
+
+1. Bot is not responding 
+2. The message showing is single tick / double tick and bot is not responding
+3. Shop now button is not working
+4. I want to switch off the Bot on my whatsapp chats
+5. Why chats are not triggered
+6. Why did the bot reply to a customer enquiry?
+7. Need to add Agent chat to bot message
+8. Random messages are going out to the people
+9. Bot is sending wrong message
+10. Need WhatsApp bot link.
+11. Need WhatsApp bot link to embed in a QR code.
+
+
+Solutions:
+
+
+For issue 1 to 2 : Bot is not responding / The message showing is single tick / double tick and bot is not responding
+
+
+Follow the below SOP:
+https://docs.google.com/document/d/1vvZM-Ltm09v5gjHHFJBE8_cZ6yjy8gEvZAuZbiMubN8/edit#heading=h.ynwatzg9v4bi
+
+
+For issue 3: Shop now button is not working
+
+
+1. Check the catalog is added or not 
+If not : add it by navigating to Bot configuration > Product catalog > Catalog sync > Add catalog 
+If yes : Check for product arrangement is added or not 
+If not : add it by going to navigating to Bot configuration > Product catalog > product arrangement > edit sheet
+        If not : Inform the client to add the product categories with id/ slug name.
+If yes : Raise a ticket to the tech team by adding a screenshot or video of the issue.
+
+
+For Issue 4:  I want to switch off the Bot on my whatsapp chat
+
+
+* Understand the use-case
+* If the customer types something unrelated to the bot flow and client wants to capture these chats and sent it to agent, raise a cfr to change the Fallback action to Send to Agent
+
+
+For Issue 5:  Why chats are not triggered
+
+
+* If the bot is not responding to customer messages, check 360/gupshup to see if their API is down.
+* If not, conduct a test of your own.
+* If the bot is not responding, raise a CRB.
+
+
+For Issue 6: Why did the bot reply to a customer enquiry?
+
+
+* Go to the concerned customer’s transcript and see if they stopped agent chat.
+* If Agent Chat was never triggered and they had sent an important message, suggest changing the Fallback to Send to Agent
+* If an NLU message was sent out, disable the NLU from the internal dashboard > Disable Intent triggers > Choose the trigger that was relevant.
+* If the relevant trigger is non-existent in the internal dashboard, raise a CFR to disable it
+
+
+For Issue 7: Need to add Agent chat to bot message
+
+
+* Understand for which type of message they want to add an Agent Chat for.
+* If it is a custom template in a flow or campaign or bot, guide them on how to add an Agent Chat Button for that template by duplicating it.
+* If it is an NLU message, raise a CFR.
+
+
+For Issue 8 and 9: Random messages are going out to the people / Bot is sending wrong message
+
+
+* If an NLU message was sent out, disable the NLU from the internal dashboard > Disable Intent triggers > Choose the trigger that was relevant.
+* If the relevant trigger is non-existent in the internal dashboard, raise a CFR to disable it
+
+
+For Issue 10 and 11: Need WhatsApp bot link / Need WhatsApp bot link to embed in a QR code
+
+
+Go to the client level login sheet, search for the brand name, copy the bot link from under the column “Whatsapp storefront link” and send it to the customer.
+
+
+If the client would like to make changes to the prefilled text, replace the “hi” in the bot link to the custom text asked for by the client.
+
+
+BusinessOnBot Dashboard
+
+
+Issues: 
+
+
+1. Unable to access the dashboard
+2. Dashboard isn't working
+
+
+Solutions:
+
+
+For issue 1 to 2 : Unable to access the dashboard / Dashboard isn't working
+
+
+Login to dashboard and check able to login to not
+If yes : 
+* Ask the client to perform a hard refresh.
+* If the issue persists, advise the client to check in incognito mode.
+* If the problem remains unresolved, raise a bug to the tech team while attaching a recording of the issue.
+If not : 
+* Raise a bug to the tech team while attaching a recording of the issue.
+
+
+Others
+
+
+Issues:
+ 
+1. How to change video links in the learn more link.
+2. Product demo request
+3. What is the attribution window?
+4. Request for a call
+5. Follow-up on previous requests
+6. How to configure the sales from BOD to Google Analytics?
+7. If we can add stories on the BOB whatsapp
+8. Mobile App notifications are not working.
+9. Request for data backfill
+10. How to find "organization ID" for mobile app
+11. Churn
+12. Invoice revise
+13. Please add team members to group chat
+14. We need a dump of all the contacts who've unsubscribed from WA marketing preferably in an excel/csv file.
+15. The BOB app is asking to login every time I open the app.
+
+
+Solutions:
+
+
+For issue 1 to 2 : How to change video links in the learn more link.
+Login to internal dashboard > Select the Client name > Onboard form > Guide links > Change the video 
+If the option is not there, raise a CFR to the tech team to provide the option in the internal dashboard or to replace the video with the correct one.
+
+
+For Issue 3: What is the attribution window?
+
+
+After a customer receives a message ( any message like abandoned cart, campaign), if they place an order within 72 hours (i.e., 3 days), we will record it in our dashboard as part of the send-based attribution window.
+
+
+For Issue 4:  Request for a call.
+
+
+Pass it onto L2 Support.
+
+
+For Issue 5: Follow-up on previous requests.
+
+
+Check previous tickets and understand the issue the client is talking about. Then talk to the relevant agent that had handled the previous query and gain insights.
+
+
+For Issue 6. How to configure the sales from BOD to Google Analytics?
+
+
+The data from campaigns can only be captured on Google Analytics with the help of UTM parameters.
+
+
+To configure UTM Parameters the Template should be a CTA button with a dynamic Link.
+
+
+For Issue 7: Can we add stories on the BOB whatsapp?
+
+
+WhatsApp Business currently does not support the use of Stories or GIFs or Stickers.
+
+
+For Issue 8: Mobile App notifications are not working.
+
+
+Notifications are still in development for the mobile app, it is erratic currently with some chats having notifications and others not.
+
+
+Still conduct basic checks like if the client has enabled notification permissions on their phone for the BOB app or if they haven’t switched their phone to silent mode.
+
+
+For Issue 9: Request for data backfill
+
+
+Raise a CFR to tech.
+
+
+For Issue 10: How to find "organization ID" for mobile app
+
+
+Organization ID is the brand name on their dashboard link, for eg: For Krishna Ayurveda it’ll be https://krishnaayurved.mybusinessonbot.com/ “krishnaayurved”
+
+
+For Issue 11: Churn
+
+
+Churn requests can come in different forms:
+1. Pause Subscription request
+2. Discontinue services request
+3. Disable 2FA request
+4. Direct request
+
+
+For all of these requests, fill in the churn form.
+
+
+For Issue 12: Invoice revise
+
+
+Ask what the discrepancy is in the invoice and then pass it onto Accounts regardless.
+
+
+For Issue 13: Please add team members to group chat
+
+
+Get the number the client would like to add and then contact their BOB POC and ask them to add the number to the group.
+
+
+For Issue 14: We need a dump of all the contacts who've unsubscribed from WA marketing preferably in an excel/csv file.
+
+
+Go to User Segmentation > Create a Segment > Add a rule > Customers > Customer who unsubscribed
+
+After creating it, generate a report of that segment.
+
+
+For Issue 15: The BOB app is asking to login every time I open the app.
+
+
+There might be a new update happening, ask the client to update the app. If no update is available, ask them to uninstall and then install the app again.
+
+
+WABA ISSUES
+
+
+Issues:
+
+
+1. BSP account is removed
+2. GST registration during API registration
+3. Please can you share WA verification requirements
+4. WABA getting flagged by meta
+
+
+Solutions:
+
+
+For Issue 1 and 2: BSP account is removed / GST registration during API registration
+
+
+If BSP has been removed, raise a CAR to onboarding team (Gouthami)
+
+
+For Issue 3: Please can you share WA verification requirements
+
+
+Green Tick Documentation: https://docs.google.com/document/d/1jSXQlk6JBypeOcOVtV-yCJ3gvkfI-NjJCZmCaQrIRjY/edit#
+
+
+Steps for Green tick: https://scribehow.com/shared/Facebook_Workflow__P_xYfxk0SM6dGGzs6Tsu-A
+
+
+You can send both of the above documents. If they request a call to guide them through this process, pass it onto L2 Support.
+
+
+For Issue 4: WABA getting flagged by meta
+
+
+* Reach out to Gupshup/360 and understand the reason for the violation.
+* Appeal if necessary over chat with 360 and for Gupshup, start a mail thread with their support.
+Best Practices and Guides:
+
+
+1. How to set up a Reorder-Smart Automation for individual products purchased.
+
+
+1. Create a generic template with a body variable.
+2. Set up the automation by selecting the trigger event to be Notifications > Order Delivery > Order Delivered
+3. Target Audience will be If customers > Placed Orders with > Products > Contains > Product of your choice
+4. Insert the approved template and set up the body variable to be common > Product name.
+5. Repeat this process for different products with different automation.
+
+
+SOP for freshchat and freshdesk
+
+
+1. Greet the customer. (Eg: Welcome to BusinessOnBot Support, my name is (name). How may I assist you today?)
+2. Ask for the customer’s name/email/phone number if the details aren’t present in the data section.
+3. Understand the query made by the customer. If not clear, ask to elaborate further with the help of a screenshot or recording.
+4. Check the issue in the Internal Knowledge Base, if it exists, follow the SOP mentioned there and determine the appropriate approach.. If not, record the new query and contact L2 for help.
+5. If it is a standard query, check the SOPs and solve the problem.
+6. After the issue has been solved, ask the customer if they need any further assistance.
+7. Thank the customer, ask for feedback and convert it to a ticket.
+8. Select the label, insert the appropriate subject, explain the issue in the description, change status to Resolved, change Agent to your name.
+
+
+Assign it to L2 Support in case of any of the following:
+
+
+1. If it is a CRB/PFR/CFR.
+2. Implementation request: Customer wants to hop on a call to understand a feature better.
+
+
+Process for CRB/CFR/PFR
+
+
+1. Understand the problem thoroughly by asking questions to the customer. Get as much information as possible with the help of screenshots and screen-recordings.
+2. Debug it by following the steps in the Issues SOP.
+3. If a bug is confirmed, confirm with the customer that this issue will be escalated to the tech team.
+4. Resolve and convert it to an open ticket, add as much information as possible and all debugging steps taken from you end in the description. Assign the freshdesk ticket to anyone in L2 Support.
+
+
+Protocols to Follow
+
+
+* Utilize the SOPs provided.
+* Always send the last message in chat to avoid SLA breach.
+* Utilize Canned responses for repetitive messages being sent.
+* If you need to debug an issue, let the customer know that you are checking this issue from your end. Provide appropriate updates to avoid customer frustration.
+* Chats who have not responded till the end of the day: Convert the to an open ticket and send the “Dropped on Chat Response” canned response.
+* Prioritize sending instant responses to frustrated customers.
+* If a customer opens a chat asking for an update on a previous query:
+1. Check the previous chats but scrolling above and viewing the previous chat interactions with said customer.
+2. Check Helpdesk to see if a ticket has been created.
+* Query related to Billing:
+1. If client wants to pause or downgrade their subscription: 
+Alert the POC of their brand
+Raise a CAR to Harsh Agrawal for pausing or downgrading their subscription.
+
+
+Chat SLAs
+
+
+* First Response Time (FRT) for Web chats = 5 minutes
+* First Response Time (FRT) for WA Group Chats = 1 hour
+* Every Response Wait Time for Web Chats = 8 minutes
+* Every Response Wait Time for WA Group Chats = 1 hours
