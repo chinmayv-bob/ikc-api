@@ -1,52 +1,65 @@
 from flask import Flask, request, jsonify
 from chromadb import PersistentClient
-from sentence_transformers import SentenceTransformer
+import threading
 
-# 🚀 Initialize Flask app
+# Lightweight imports first
+import torch
+torch.set_num_threads(1)
+
 app = Flask(__name__)
 
-# 🧠 Load your local Chroma Vector DB
-client = PersistentClient(path="C:/Users/chinm/desktop/ikc/ikc_vector_store")
-try:
-    collection = client.get_collection("ikc_kb")
-except:
-    collection = client.create_collection("ikc_kb")
+# Connect to your persistent vector store
+client = PersistentClient(path="ikc_vector_store")
+collection = client.get_collection("ikc_kb")
 
+# Model lazy-load mechanism
+model = None
+model_lock = threading.Lock()
 
-# 🔧 Load the sentence transformer model
-model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L3-v2")
+def get_model():
+    """Loads the SentenceTransformer model only when needed."""
+    global model
+    if model is None:
+        with model_lock:
+            if model is None:  # double-check inside lock
+                from sentence_transformers import SentenceTransformer
+                model = SentenceTransformer("paraphrase-MiniLM-L3-v2")
+    return model
 
-@app.route('/ikc_search', methods=['POST'])
+@app.route("/ikc_search", methods=["POST"])
 def ikc_search():
     try:
         data = request.get_json()
         query = data.get("query", "").strip()
 
         if not query:
-            return jsonify({"error": "No query provided"}), 400
+            return jsonify({"error": "Query text missing"}), 400
 
-        # Embed the query and search top 3 results
-        emb = model.encode(query).tolist()
-        results = collection.query(query_embeddings=[emb], n_results=3)
+        embedder = get_model()  # load model only now
+        query_embedding = embedder.encode(query).tolist()
 
-        top_docs = results['documents'][0] if results['documents'] else []
-        scores = results['distances'][0] if results['distances'] else []
+        results = collection.query(query_embeddings=[query_embedding], n_results=3)
 
-        if not top_docs:
-            return jsonify({"found": False, "message": "❌ No relevant info found in IKC"})
-
-        top_match = top_docs[0]
-        score = round(scores[0], 4)
-
-        return jsonify({
-            "found": True,
-            "message": f"✅ Related info found in IKC (score: {score})",
-            "top_snippet": top_match[:400],
-        })
-
+        if results and results["documents"]:
+            top_doc = results["documents"][0][0]
+            return jsonify({
+                "found": True,
+                "message": "✅ Related knowledge found in IKC.",
+                "snippet": top_doc
+            })
+        else:
+            return jsonify({
+                "found": False,
+                "message": "❌ No IKC match found.",
+                "snippet": None
+            })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/", methods=["GET"])
+def health_check():
+    return jsonify({"status": "IKC API running", "lazy_model_loaded": model is not None})
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+if __name__ == "__main__":
+    # use 0.0.0.0 for Render/Railway binding
+    app.run(host="0.0.0.0", port=10000)
