@@ -1,3 +1,4 @@
 flask
 chromadb
 sentence-transformers
+gunicorn

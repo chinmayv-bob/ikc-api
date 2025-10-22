@@ -1,1 +1,1 @@
-web: python ikc_api.py
+web: gunicorn ikc_api:app
