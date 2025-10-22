@@ -1,1 +1,1 @@
-web: gunicorn ikc_api:app
+web: gunicorn app:app
