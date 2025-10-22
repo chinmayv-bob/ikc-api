@@ -61,5 +61,7 @@ def health_check():
     return jsonify({"status": "IKC API running", "lazy_model_loaded": model is not None})
 
 if __name__ == "__main__":
-    # use 0.0.0.0 for Render/Railway binding
-    app.run(host="0.0.0.0", port=10000)
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
+
